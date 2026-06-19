@@ -52,13 +52,17 @@ body::before {
     box-shadow: 0 10px 30px rgba(243, 156, 18, 0.2);
 }
 
+/* POPRAWIONA KLASA DLA LOGO-BANERU */
 .logo-banner {
     width: 100%;
-    max-width: 700px;
+    max-width: 650px;                   /* Idealna szerokość dopasowana do proporcji zdjęcia */
     height: auto;
-    margin: 0 auto 10px;
+    margin: 0 auto 20px;                /* Zwiększony odstęp na dole od napisu "Turnieje..." */
     display: block;
-    filter: drop-shadow(0 0 15px rgba(243, 156, 18, 0.5));
+    background-color: #1b263b;          /* Ciemniejsze tło wewnątrz ramki, tak jak na screenie */
+    border: 1px solid rgba(243, 156, 18, 0.15); /* Subtelna krawędź wokół baneru */
+    border-radius: 6px;                 /* Zaokrąglenie rogów całego prostokąta */
+    box-shadow: 0 0 25px rgba(243, 156, 18, 0.35); /* Ciepła, pomarańczowa łuna wokół grafiki */
 }
 
 .subtitle {
