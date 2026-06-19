@@ -36,33 +36,24 @@ body::before {
     z-index: 1;
 }
 
-/* HEADER */
+/* HEADER - przezroczysty, aby logo ładnie leżało bezpośrednio na tle strony */
 .header {
-    background: rgba(27, 38, 59, 0.85);
-    padding: 30px;
-    border-radius: 8px;
-    border-bottom: 5px solid #f39c12;
+    background: transparent;
+    padding: 30px 10px;
     text-align: center;
-    transition: all 0.3s ease;
-    backdrop-filter: blur(4px);
 }
 
-.header:hover {
-    transform: translateY(-3px);
-    box-shadow: 0 10px 30px rgba(243, 156, 18, 0.2);
-}
-
-/* POPRAWIONA KLASA DLA LOGO-BANERU */
+/* Zaktualizowana klasa baneru - wymuszenie mniejszego rozmiaru i efektu poświaty */
 .logo-banner {
-    width: 100%;
-    max-width: 650px;                   /* Idealna szerokość dopasowana do proporcji zdjęcia */
-    height: auto;
-    margin: 0 auto 20px;                /* Zwiększony odstęp na dole od napisu "Turnieje..." */
-    display: block;
-    background-color: #1b263b;          /* Ciemniejsze tło wewnątrz ramki, tak jak na screenie */
-    border: 1px solid rgba(243, 156, 18, 0.15); /* Subtelna krawędź wokół baneru */
-    border-radius: 6px;                 /* Zaokrąglenie rogów całego prostokąta */
-    box-shadow: 0 0 25px rgba(243, 156, 18, 0.35); /* Ciepła, pomarańczowa łuna wokół grafiki */
+    width: 100% !important;
+    max-width: 500px !important;       /* Zmniejszono do 500px dla lepszego efektu */
+    height: auto !important;
+    margin: 0 auto 20px !important;    /* Odstęp od napisu pod spodem */
+    display: block !important;
+    background-color: #1b263b;          /* Ciemne tło wewnątrz ramki baneru */
+    border: 1px solid rgba(243, 156, 18, 0.2); 
+    border-radius: 6px;                 /* Zaokrąglone rogi */
+    box-shadow: 0 0 25px rgba(243, 156, 18, 0.35); /* Pomarańczowy blask wokół baneru */
 }
 
 .subtitle {
@@ -202,11 +193,11 @@ a:hover {
     }
     
     .header {
-        padding: 20px 15px;
+        padding: 20px 10px;
     }
     
     .logo-banner {
-        max-width: 100%;
+        max-width: 100% !important;
     }
     
     .section {
